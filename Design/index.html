@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thrive Assist</title>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="alert-message" class="alert-style">
+        incorrect email adress or password
+        <div id="x-icon"><img src="images/x.icon.svg" /></div>
+      </div>
+
+      <div class="welcome-container">
+        <div>
+          <div class="welcome">Welcome to Thrive Assist</div>
+          <div class="account">
+            Don't have an account?
+            <a class="anchor-tag" href="www.createaccounts">Create Account</a
+            ><br />
+          </div>
+        </div>
+      </div>
+
+      <div class="Log-in">
+        <img
+          class="google-image"
+          src="https://cdn1.iconfinder.com/data/icons/google-s-logo/150/Google_Icons-09-512.png"
+        />
+        <p>
+          <a class="anchor-link" href="www.Login.com">Log in with google</a>
+        </p>
+      </div>
+
+      <div class="line"></div>
+
+      <form id="form" action="/wwww.test.com">
+        <div class="input-control">
+          <div class="email-label">Email Address</div>
+          <div class="input-wrapper">
+            <div>
+              <input type="text" id="id_email" name="email" class="email" />
+              <div id="alert_message" class="error_icon">
+                <img src="images/exclamation-circles.svg" />
+              </div>
+              <div id="success_message" class="success_icon">
+                <img src="images/check.svg" />
+              </div>
+            </div>
+            <span id="email_error" class="email_validate"></span>
+          </div>
+        </div>
+
+        <div class="input-control">
+          <div class="password-label">Password</div>
+          <div class="input-container">
+            <input
+              type="password"
+              name="password"
+              autocomplete="current-password"
+              id="id_password"
+              class="password"
+            />
+            <div id="eyeicon" class="input-image"></div>
+          </div>
+          <span id="password_error" class="password_validate"></span>
+        </div>
+
+        <button type="submit" class="button">Sign in</button>
+      </form>
+
+      <div class="forgot-password">
+        <a class="forgot-password-link" href="/Design/forgot-password.html"
+          >Forgot Password?</a
+        >
+      </div>
+    </div>
+
+    <div class="logo">
+      <img src="images/thrive-assist-logo.svg" />
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
