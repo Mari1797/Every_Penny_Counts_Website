@@ -1,0 +1,523 @@
+.wrapper {
+  margin-left: 1.1rem;
+  margin-right: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.enter_code_wrapper {
+  width: 285px;
+  height: 79px;
+  margin-top: 60px;
+  gap: 16px;
+}
+
+.enter_code {
+  width: 179px;
+  height: 39px;
+  font-family: "Clash Display";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24.6px;
+  text-align: left;
+}
+.code {
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.email {
+  font-family: "Source Sans Pro";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.11px;
+  text-align: left;
+}
+
+.verification_wrapper {
+  width: 593px;
+  height: 76px;
+  margin-top: 72px;
+  gap: 8px;
+}
+
+.verification-label {
+  font-family: "Clash Display";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.68px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 8px;
+  color: #010101;
+}
+.verification {
+  width: 323px;
+  height: 48px;
+  padding-left: 20px;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px;
+  border-style: solid;
+  border-color: #d7dae0;
+}
+
+.verification_input input:focus {
+  outline: 0;
+  background-color: #f9fafb;
+  border-color: #0257ee;
+}
+
+.recieve_code {
+  margin-top: 4.5px;
+  font-family: "Clash Display";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.76px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #667185;
+}
+
+.resend_code {
+  color: #0257ee;
+}
+
+.button {
+  width: 343px;
+  height: 48px;
+  gap: 16px;
+  border-radius: 30px;
+  background-color: #0257ee;
+  color: #f6f7f9;
+  margin-top: 57px;
+  border-color: #0257ee;
+  border-style: solid;
+}
+
+.incorrect input {
+  background-color: #fdf2f2;
+  border-color: #fa2b2b;
+  color: #fa2b2b;
+}
+
+.correct input {
+  background-color: #f3faf7;
+  border-color: #2ac940;
+  color: #2ac940;
+  font-family: "Clash display";
+}
+
+.otp_container {
+  position: relative;
+}
+
+.correct {
+  font-family: "Source Sans Pro";
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.26rem;
+  text-align: left;
+  color: #2ac940;
+}
+
+.incorrect {
+  color: #fa2b2b;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.26rem;
+  font-family: "Source Sans Pro";
+}
+.error_icon {
+  position: absolute;
+  margin-top: -2.19rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 19.6rem;
+  cursor: pointer;
+  display: none;
+}
+
+.error_display {
+  position: absolute;
+  margin-top: -2.19rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 19.6rem;
+  cursor: pointer;
+  display: block;
+}
+
+.success_icon {
+  position: absolute;
+  margin-top: -2.19rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 19.6rem;
+  cursor: pointer;
+  display: none;
+}
+
+.success_display {
+  position: absolute;
+  margin-top: -2.19rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 19.6rem;
+  cursor: pointer;
+  display: block;
+}
+
+@media only screen and (min-width: 48rem) {
+  .enter_code_wrapper {
+    width: 285px;
+    height: 79px;
+    margin-top: 143px;
+    margin-left: 12.5rem;
+    margin-left: 12.5rem;
+    gap: 16px;
+  }
+
+  .enter_code {
+    width: 179px;
+    height: 39px;
+    font-family: "Clash Display";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.36px;
+    text-align: left;
+    margin-left: 58px;
+  }
+  .code {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 16px;
+  }
+
+  .email {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20.11px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+
+  .verification_wrapper {
+    width: 593px;
+    height: 76px;
+    margin-top: 135px;
+    margin-left: 4.375rem;
+    margin-right: 4.375rem;
+    gap: 8px;
+  }
+
+  .verification-label {
+    font-family: "Clash Display";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.68px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 8px;
+  }
+  .verification {
+    width: 579px;
+    height: 48px;
+    padding-left: 14px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px;
+    border-style: solid;
+    color: #d7dae0;
+  }
+
+  .verification_input input:focus {
+    outline: 0;
+    background-color: #f9fafb;
+    border-color: #0257ee;
+  }
+
+  .recieve_code {
+    margin-top: 4.5px;
+    font-family: "Clash Display";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.76px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #667185;
+  }
+
+  .resend_code {
+    color: #0257ee;
+  }
+
+  .button {
+    width: 593px;
+    height: 48px;
+    gap: 16px;
+    border-radius: 30px;
+    background-color: #0257ee;
+    color: #f6f7f9;
+    margin-top: 57px;
+    border-color: #0257ee;
+    border-style: solid;
+  }
+
+  .incorrect input {
+    background-color: #fdf2f2;
+    border-color: #fa2b2b;
+    color: #fa2b2b;
+  }
+
+  .correct input {
+    background-color: #f3faf7;
+    border-color: #2ac940;
+    color: #2ac940;
+    font-family: "Clash display";
+  }
+
+  .otp_container {
+    position: relative;
+  }
+
+  .correct {
+    font-family: "Source Sans Pro";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.26rem;
+    text-align: left;
+    color: #2ac940;
+  }
+
+  .incorrect {
+    color: #fa2b2b;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.26rem;
+    font-family: "Source Sans Pro";
+  }
+  .error_icon {
+    position: absolute;
+    margin-top: -2.19rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 34.5625rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .error_display {
+    position: absolute;
+    margin-top: -2.19rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 34.5625rem;
+    cursor: pointer;
+    display: block;
+  }
+
+  .success_icon {
+    position: absolute;
+    margin-top: -2.19rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 34.5625rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .success_display {
+    position: absolute;
+    margin-top: -2.19rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 34.5625rem;
+    cursor: pointer;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 65rem) {
+  .enter_code_wrapper {
+    width: 285px;
+    height: 79px;
+    margin-top: 143px;
+    margin-left: 577.5px;
+    gap: 16px;
+  }
+
+  .enter_code {
+    width: 179px;
+    height: 39px;
+    font-family: "Clash Display";
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.36px;
+    text-align: left;
+    margin-left: 58px;
+  }
+
+  .code {
+    font-family: "Source Sans Pro";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 16px;
+  }
+
+  .verification_wrapper {
+    width: 593px;
+    height: 76px;
+    margin-top: 135px;
+    margin-left: 26.5rem;
+    gap: 8px;
+  }
+
+  .verification-label {
+    font-family: "Clash Display";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.68px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 8px;
+  }
+
+  .verification {
+    width: 579px;
+    height: 48px;
+    padding-left: 14px;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px;
+    border-style: solid;
+    color: #d7dae0;
+  }
+
+  .verification_input input:focus {
+    outline: 0;
+  }
+
+  .recieve_code {
+    margin-top: 4.5px;
+    font-family: "Clash Display";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.76px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #667185;
+  }
+
+  .resend_code {
+    color: #0257ee;
+  }
+
+  .button {
+    width: 593px;
+    height: 48px;
+    gap: 16px;
+    border-radius: 30px;
+    background-color: #0257ee;
+    color: #f6f7f9;
+    margin-top: 57px;
+    border-color: #0257ee;
+    border-style: solid;
+  }
+
+  .incorrect input {
+    background-color: #fdf2f2;
+    border-color: #fa2b2b;
+    color: #fa2b2b;
+  }
+
+  .correct input {
+    background-color: #f3faf7;
+    border-color: #2ac940;
+    color: #2ac940;
+    font-family: "Clash display";
+  }
+
+  .otp_container {
+    position: relative;
+  }
+
+  .correct {
+    font-family: "Source Sans Pro";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.26rem;
+    text-align: left;
+    color: #2ac940;
+  }
+
+  .incorrect {
+    color: #fa2b2b;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.26rem;
+    font-family: "Source Sans Pro";
+  }
+
+  .error_icon {
+    position: absolute;
+    margin-top: -2.19rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 34.5625rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .error_display {
+    position: absolute;
+    margin-top: -2.19rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 34.5625rem;
+    cursor: pointer;
+    display: block;
+  }
+
+  .success_icon {
+    position: absolute;
+    margin-top: -2.19rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 34.5625rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .success_display {
+    position: absolute;
+    margin-top: -2.19rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 34.5625rem;
+    cursor: pointer;
+    display: block;
+  }
+}

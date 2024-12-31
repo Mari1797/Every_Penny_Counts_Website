@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Enter-Code.css" />
+    <script defer src="Enter-Code.js"></script>
+    <title>Enter Code</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="enter_code_wrapper">
+        <div class="enter_code">Enter Code</div>
+        <div class="code">
+          We sent code to
+          <span class="email">meyeneudoh@gmail.com</span>
+        </div>
+      </div>
+      <form id="form" action="/Reset-password">
+        <div class="verification_wrapper">
+          <div class="verification-label">Verification Code</div>
+          <div class="otp-container">
+            <div class="verification_input">
+              <input type="digit" id="otp_id" class="verification" />
+            </div>
+            <div id="alert-message" class="error_icon">
+              <img src="images/exclamation-circles.svg" />
+            </div>
+            <div id="success_message" class="success_icon">
+              <img src="images/check.svg" />
+            </div>
+          </div>
+
+          <div class="recieve_code">
+            Didn't recieve code? <span class="resend_code">Resend code</span>
+          </div>
+
+          <span id="verification_error"></span>
+          <div class="proceed">
+            <button class="button">Reset Password</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
