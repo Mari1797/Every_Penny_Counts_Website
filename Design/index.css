@@ -701,7 +701,8 @@ body {
     text-align: left;
     padding-left: 1rem;
     padding-right: 1rem;
-    color: #c81e1e;
+    background: #def7ec;
+
     padding-top: 1rem;
     padding-bottom: 1rem;
     display: none;
