@@ -1,3 +1,4 @@
+// To see or hide password
 let showIcon = document.getElementById("eyeicon");
 let passwordField = document.getElementById("id_password");
 
@@ -14,6 +15,7 @@ const toggle = (passwordField, icon) => {
   }
 };
 
+// eror message at the top of the Login Page
 const displayWarning = document.getElementById("x-icon");
 const warning = document.getElementById("alert-messsage");
 
@@ -40,20 +42,12 @@ window.addEventListener("message", (e) => {
     const email_validate =
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
-    //
-    if (password.value === "" || password.value == null) {
-      e.preventDefault();
-      password_error.innerHTML = "Password is required";
-      password_error.parentElement.classList.add("incorrect");
-    } else {
-      email_error.innerHTML = "Pass";
-      password_error.parentElement.classList.add("correct");
-    }
-
     if (password.value.length <= 7) {
+      //password validation
       e.preventDefault();
 
-      password_error.innerHTML = "Password must be more than 7 characters";
+      password_error.innerHTML =
+        "Password must be more than 8 characters or digits";
       password_error.parentElement.classList.add("incorrect");
       alert_message1.classList.add("alert");
     } else {
@@ -63,13 +57,8 @@ window.addEventListener("message", (e) => {
       alert_message1.classList.remove("alert");
     }
 
-    if (email.value === "" || email.value == null) {
-      e.preventDefault();
-      email_error.innerHTML = "Email is requirred";
-      email_error.parentElement.classList.add("incorrect");
-    }
-
     if (!email.value.match(email_validate)) {
+      // email validation
       e.preventDefault();
       email_error.innerHTML = "Email Incorrect";
       email_error.parentElement.classList.add("incorrect");
@@ -87,6 +76,7 @@ window.addEventListener("message", (e) => {
     if (password.value.length >= 8 && email.value.match(email_validate)) {
       e.preventDefault();
       setTimeout(function () {
+        // delay form submission for 5s
         e.target.submit();
       }, 5000);
     }
