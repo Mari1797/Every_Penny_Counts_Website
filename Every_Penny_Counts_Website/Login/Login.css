@@ -1,0 +1,792 @@
+/* :default */
+
+body {
+  display: flex;
+}
+
+#container {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  font-family: "Clash Display", sans-serif;
+}
+
+.logo {
+  display: none;
+}
+
+.welcome {
+  width: 15.8125rem;
+  height: 1.5625rem;
+  font-family: Clash Display;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5375rem;
+  text-align: left;
+  margin-top: 3.75rem;
+}
+
+.account {
+  font-family: "Source Sans Pro";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: left;
+  color: #667185;
+  margin-top: 1rem;
+}
+
+.anchor-tag {
+  font-family: "Source Sans Pro";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: left;
+  color: #ea3977;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.Log-in {
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-color: #d7dae0;
+  border-radius: 0.3125rem;
+  width: 21.4375rem;
+  height: 3.375rem;
+  margin-top: 2.5625rem;
+  padding-top: 0.125rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.anchor-link {
+  color: #010101;
+  text-decoration: none;
+  font-family: Clash Display;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.23rem;
+  text-align: left;
+}
+
+.google-image {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.875rem;
+}
+
+.line {
+  width: 21.4375rem;
+  margin-top: 2rem;
+  border-style: solid;
+  border-color: #f5f5f5;
+  border-width: 0.0625rem;
+}
+
+.email {
+  border-style: solid;
+  border-width: 0.00625rem;
+  border-color: #d7dae0;
+  border-radius: 0.3125rem;
+  width: 20.4375rem;
+  height: 3rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  font-family: "Clash display";
+  color: #667185;
+}
+
+.email-label {
+  font-family: Clash Display;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2475rem;
+  text-align: left;
+  color: #010101;
+  margin-bottom: 0.5rem;
+}
+
+.password {
+  border-style: solid;
+  border-width: 0.0625rem;
+  border-color: #d7dae0;
+  border-radius: 0.3125rem;
+  width: 20.4375rem;
+  height: 3rem;
+  padding-left: 1rem;
+  font-family: "Clash display";
+  color: #667185;
+}
+
+.password-label {
+  font-family: "Clash Display";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2475rem;
+  text-align: left;
+  color: #010101;
+  margin-bottom: 0.5rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-image {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.625rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  background-image: url(../images/eye.svg);
+}
+
+.input-image.display {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.625rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  background-image: url(../images/eye-slash.svg);
+}
+.button {
+  background-color: #0257ee;
+  width: 21.4375rem;
+  color: #f6f7f9;
+  height: 3rem;
+  border-style: solid;
+  border-color: #0257ee;
+  border-radius: 1.875rem;
+  font-family: "Clash Display", sans-serif;
+  margin-top: 4.3125rem;
+  padding: 1.375rem, 1.25rem;
+  gap: 1.25rem;
+}
+
+.sign-in {
+  color: #f6f7f9;
+  text-decoration: none;
+}
+
+.forgot-password {
+  line-height: 1.5rem;
+  font-weight: 500;
+  margin-top: 1.6875rem;
+  margin-left: 7rem;
+  font-family: "Clash Display", sans-serif;
+  font-family: Clash Display;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+.forgot-password-link {
+  color: #667185;
+  text-decoration: none;
+}
+
+#form {
+  margin-top: 4.4375rem;
+}
+
+.password_validate {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.26rem;
+  color: #fa2b2b;
+  position: absolute;
+  margin-top: 0.1875rem;
+}
+
+.email_validate {
+  font-family: "Source Sans Pro";
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.26rem;
+  color: #fa2b2b;
+  position: absolute;
+  margin-top: -30px;
+}
+
+.incorrect input {
+  background-color: #fdf2f2;
+  border-color: #fa2b2b;
+  color: #fa2b2b;
+}
+
+.correct input {
+  background-color: #f3faf7;
+  border-color: #2ac940;
+  color: #2ac940;
+  font-family: "Clash display";
+}
+
+.alert-style {
+  width: 15.5rem;
+  height: 1.31rem;
+  margin-top: 1.25rem;
+  border-radius: 0.375rem;
+  background: #fde8e8;
+  font-family: "Inter";
+  font-size: 5px;
+  font-weight: 600;
+  text-align: left;
+  color: #c81e1e;
+  display: none;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 0.7rem;
+  padding-left: 0.7rem;
+}
+
+.alert {
+  width: 15.5rem;
+  height: 1.3125rem;
+  margin-top: 0.5rem;
+  border-radius: 0.375rem;
+  background: #fde8e8;
+  font-family: "Inter";
+  font-size: 0.775rem;
+  font-weight: 600;
+  line-height: 1.3125rem;
+  text-align: left;
+  color: #c81e1e;
+  display: flex;
+  gap: 0.75rem;
+  position: absolute;
+}
+
+.input-control input:focus {
+  outline: 0;
+  background-color: #f9fafb;
+  border-color: #0257ee;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.error_icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 19.75rem;
+  margin-top: -4.1rem;
+  cursor: pointer;
+  display: none;
+}
+
+.error_display {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 19.75rem;
+  margin-top: -4.1rem;
+  cursor: pointer;
+  display: block;
+}
+
+.success_icon {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 19.75rem;
+  margin-top: -4.1rem;
+  cursor: pointer;
+  display: none;
+}
+
+.success_display {
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 19.75rem;
+  margin-top: -4.1rem;
+  cursor: pointer;
+  display: block;
+}
+
+/* small screens */
+@media only screen and (max-width: 23.75rem) {
+  body {
+    display: flex;
+  }
+
+  .Log-in {
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-color: #d7dae0;
+    border-radius: 0.3125rem;
+    width: 18.75rem;
+    height: 3.375rem;
+    margin-top: 2.5625rem;
+    padding-top: 0.125rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  #container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    font-family: "Clash Display", sans-serif;
+  }
+
+  .Log-in {
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-color: #d7dae0;
+    border-radius: 0.3125rem;
+    width: 320px;
+    height: 3.375rem;
+    margin-top: 2.5625rem;
+    padding-top: 0.125rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+  }
+
+  .line {
+    width: 20rem;
+    margin-top: 2rem;
+    border-style: solid;
+    border-color: #f5f5f5;
+    border-width: 0.0625rem;
+  }
+
+  .password {
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-color: #d7dae0;
+    border-radius: 0.3125rem;
+    width: 19rem;
+    height: 3rem;
+    padding-left: 1rem;
+    font-family: "Clash display";
+    color: #667185;
+  }
+
+  .email {
+    border-style: solid;
+    border-width: 0.00625rem;
+    border-color: #d7dae0;
+    border-radius: 0.3125rem;
+    width: 19rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    font-family: "Clash display";
+    color: #667185;
+  }
+
+  .button {
+    background-color: #0257ee;
+    width: 320px;
+    color: #f6f7f9;
+    height: 3rem;
+    border-style: solid;
+    border-color: #0257ee;
+    border-radius: 1.875rem;
+    font-family: "Clash Display", sans-serif;
+    margin-top: 4.3125rem;
+    padding: 22px, 20px;
+    gap: 20px;
+  }
+  .input-wrapper {
+    position: relative;
+  }
+
+  .error_icon {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 293px;
+    margin-top: -65px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .error_display {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 18.3125rem;
+    margin-top: -4.1rem;
+    cursor: pointer;
+    display: block;
+  }
+
+  .success_icon {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 18.3125rem;
+    margin-top: -4.1rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .success_display {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 18.3125rem;
+    margin-top: -4.1rem;
+    cursor: pointer;
+    display: block;
+  }
+}
+
+/* meduim screens and large screens */
+@media only screen and (min-width: 48rem) {
+  body {
+    display: flex;
+  }
+  #container {
+    margin-left: 4.875rem;
+
+    font-family: "Clash Display", sans-serif;
+  }
+
+  .welcome {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.46rem;
+    color: #010101;
+    gap: 1rem;
+    width: 25.3125rem;
+    height: 2.4375;
+    font-family: "Clash Display", sans-serif;
+    margin-top: 6.875rem;
+  }
+
+  .account {
+    color: #667185;
+    font-family: "Source sans pro";
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-top: 2.5rem;
+  }
+
+  .anchor-tag {
+    color: #ea3977;
+    text-decoration: none;
+  }
+  .Log-in {
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-color: #d7dae0;
+    border-radius: 0.3125rem;
+    height: 3.375rem;
+    width: 37.1rem;
+    text-align: center;
+    margin-top: 3rem;
+    font-weight: 500;
+    padding-top: 0.125rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    color: #010101;
+  }
+
+  .google-image {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 0.875rem;
+  }
+
+  .line {
+    width: 37.1rem;
+    height: 0rem;
+    margin-top: 2.625rem;
+    border-style: solid;
+    border-color: #f5f5f5;
+    border-width: 0.0625rem;
+  }
+  .email {
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-color: #d7dae0;
+    border-radius: 0.3125rem;
+    width: 36.1rem;
+    height: 3rem;
+    padding-left: 1rem;
+    font-family: "Clash display";
+    color: #667185;
+  }
+
+  .input-control input:focus {
+    outline: 0;
+    background-color: #f9fafb;
+    border-color: #0257ee;
+  }
+
+  .email-label {
+    font-family: "Clash Display";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2475rem;
+    text-align: left;
+    color: #010101;
+    margin-bottom: 0.5rem;
+  }
+
+  .password {
+    border-style: solid;
+    border-width: 0.0625rem;
+    border-color: #d7dae0;
+    border-radius: 0.3125rem;
+    width: 36.1rem;
+    height: 3rem;
+    padding-left: 1rem;
+    font-family: "Clash display";
+    color: #667185;
+  }
+
+  .password-label {
+    font-family: "Clash Display";
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.2475rem;
+    text-align: left;
+    color: #010101;
+    margin-bottom: 0.5rem;
+  }
+
+  #form {
+    margin-top: 1.8125rem;
+  }
+  .button {
+    background-color: #0257ee;
+    width: 37.1rem;
+    color: #f6f7f9;
+    height: 3rem;
+    border-style: solid;
+    border-color: #0257ee;
+    border-radius: 1.875rem;
+    font-family: "Clash Display", sans-serif;
+    margin-top: 4.3125rem;
+    cursor: pointer;
+  }
+
+  .sign-in {
+    color: #f6f7f9;
+    text-decoration: none;
+  }
+
+  .forgot-password {
+    line-height: 1.5rem;
+    font-weight: 500;
+    margin-top: 1.6875rem;
+    margin-left: 14.725rem;
+    font-family: "Clash Display", sans-serif;
+  }
+
+  .forgot-password-link {
+    color: #667185;
+    text-decoration: none;
+  }
+
+  .logo {
+    width: 40.1rem;
+    height: 51rem;
+    margin-top: 6.875rem;
+    margin-left: 5.375rem;
+    display: flex;
+  }
+
+  .anchor-link {
+    color: #010101;
+    text-decoration: none;
+  }
+
+  .input-container {
+    position: relative;
+  }
+
+  .input-image {
+    position: absolute;
+    bottom: 0.75rem;
+    right: 0.625rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    background-image: url(../images/eye.svg);
+  }
+
+  .input-image.display {
+    position: absolute;
+    bottom: 0.75rem;
+    right: 0.625rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+    background-image: url(../images/eye-slash.svg);
+  }
+
+  .password_validate {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.26rem;
+    color: #fa2b2b;
+    position: absolute;
+    margin-top: 0.1875rem;
+  }
+
+  .email_validate {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.26rem;
+    color: #fa2b2b;
+    position: absolute;
+    margin-top: -1.875rem;
+  }
+
+  .email_validate.correct {
+    font-family: "Source Sans Pro";
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.26rem;
+    color: #2ac940;
+  }
+
+  .incorrect input {
+    background-color: #fdf2f2;
+    border-color: #fa2b2b;
+    color: #fa2b2b;
+  }
+
+  .correct input {
+    background-color: #f3faf7;
+    border-color: #2ac940;
+    color: #2ac940;
+    font-family: "Clash display";
+  }
+
+  .correct {
+    font-family: "Source Sans Pro";
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.26rem;
+    text-align: left;
+    color: #2ac940;
+  }
+
+  .incorrect {
+    color: #fa2b2b;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.26rem;
+    font-family: "Source Sans Pro";
+  }
+
+  .alert-style {
+    width: 312px;
+    height: 1.3125rem;
+    margin-top: 1.25rem;
+    margin-left: 12.3125rem;
+    border-radius: 0.375rem;
+    background: #fde8e8;
+    font-family: "Inter";
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.3125rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background: #def7ec;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: none;
+    gap: 0.75rem;
+  }
+
+  .alert {
+    width: 280px;
+    height: 1.3125rem;
+    margin-top: 1.25rem;
+    margin-left: 12.3125rem;
+    border-radius: 0.375rem;
+    background: #fde8e8;
+    font-family: "Inter";
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.3125rem;
+    text-align: left;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #c81e1e;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    gap: 0.75rem;
+    position: absolute;
+  }
+
+  .Forgot_password {
+    width: 18.625rem;
+    height: 2.4375rem;
+    font-family: "Clash Display";
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.46rem;
+    text-align: left;
+    color: #010101;
+  }
+
+  .input-wrapper {
+    position: relative;
+  }
+
+  .error_icon {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 553px;
+    margin-top: -65px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .error_display {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 35.3125rem;
+    margin-top: -4.1rem;
+    cursor: pointer;
+    display: block;
+  }
+
+  .success_icon {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 35.3125rem;
+    margin-top: -4.1rem;
+    cursor: pointer;
+    display: none;
+  }
+
+  .success_display {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 35.3125rem;
+    margin-top: -4.1rem;
+    cursor: pointer;
+    display: block;
+  }
+}
